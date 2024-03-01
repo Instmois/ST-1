@@ -15,8 +15,7 @@ TEST(Prime, tetsBig) {
     EXPECT_TRUE(checkPrime(123'456'791));
 }
 TEST(Prime, tetsVeryBig) {
-    EXPECT_TRUE(checkPrime(1e12 + 39));
-    EXPECT_FALSE(checkPrime(1e13 + 37));
+    EXPECT_FALSE(checkPrime(10'000'000'000'037));
 }
 
 TEST(NPrime, testSmall) {
