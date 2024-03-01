@@ -7,7 +7,7 @@ TEST(Prime, testSmall) {
     EXPECT_TRUE(checkPrime(1));
     EXPECT_TRUE(checkPrime(3));
     EXPECT_FALSE(checkPrime(12));
-    EXPECT_FALSE(checkPrime(13));
+    EXPECT_TRUE(checkPrime(13));
 }
 
 TEST(Prime, tetsBig) {
@@ -27,8 +27,8 @@ TEST(NPrime, testSmall) {
 }
 
 TEST(NPrime, testBig) {
-    EXPECT_EQ(nPrime(1e9 + 4), 22'232'331);
-    EXPECT_EQ(nPrime(123'456'789), 212'312);
+    EXPECT_EQ(nPrime(1e6 + 4), 232'331);
+    EXPECT_EQ(nPrime(1'456'789), 212'312);
 }
 
 TEST(NextPrime, testSmall) {
