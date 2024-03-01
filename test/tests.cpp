@@ -11,11 +11,11 @@ TEST(Prime, testSmall) {
 }
 
 TEST(Prime, tetsBig) {
-    EXPECT_FALSE(checkPrime(1e9 + 7));
+    EXPECT_TRUE(checkPrime(1e9 + 7));
     EXPECT_TRUE(checkPrime(123'456'791));
 }
 TEST(Prime, tetsVeryBig) {
-    EXPECT_FALSE(checkPrime(10'000'000'000'037));
+    EXPECT_TRUE(checkPrime(10'000'000'000'037));
 }
 
 TEST(NPrime, testSmall) {
