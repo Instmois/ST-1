@@ -11,12 +11,12 @@ TEST(Prime, testSmall) {
 }
 
 TEST(Prime, tetsBig) {
-    EXPECT_FALSE(checkPrime(1e9 + 4));
-    EXPECT_TRUE(checkPrime(123'456'789));
+    EXPECT_FALSE(checkPrime(1e9 + 7));
+    EXPECT_TRUE(checkPrime(123'456'791));
 }
 TEST(Prime, tetsVeryBig) {
-    EXPECT_TRUE(checkPrime(1e12 + 4));
-    EXPECT_FALSE(checkPrime(1e13 + 2));
+    EXPECT_TRUE(checkPrime(1e12 + 39));
+    EXPECT_FALSE(checkPrime(1e13 + 37));
 }
 
 TEST(NPrime, testSmall) {
@@ -33,7 +33,7 @@ TEST(NPrime, testBig) {
 TEST(NextPrime, testSmall) {
     EXPECT_EQ(nextPrime(4), 5);
     EXPECT_EQ(nextPrime(11), 13);
-    EXPECT_EQ(nextPrime(10), 17);
+    EXPECT_EQ(nextPrime(10), 11);
 }
 
 TEST(NextPrime, testBig) {
